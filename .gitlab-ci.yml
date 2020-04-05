@@ -1,0 +1,66 @@
+image: ruby:2.3
+
+# Cache gems in between builds
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - vendor/ruby
+
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+
+before_script:
+  - bundle install -j $(nproc) --path vendor/ruby # cache deps in vendor
+
+# stages:
+#   - test
+#   - pa11y-json
+#   - deploy
+
+stages:
+  - deploy
+
+# test:
+#   stage: test
+#   script:
+#   - bundle exec jekyll build -d test
+#   artifacts:
+#     paths:
+#     - test
+#   except:
+#   - master
+
+pages:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+
+# pa11y:
+#   stage: pa11y-json
+#   image: node:8
+#   allow_failure: false
+#   before_script: []
+#   cache: {}
+#   script:
+#     - apt-get update
+#     - apt-get -y install ruby-full
+#     - mkdir pa11y-report
+#     - apt-get -y install rubygems
+#     - gem install bundler
+#     - bundle install
+#     - touch pa11y-report/index.html
+#     - ./pa11y-new-build.sh
+#   artifacts:
+#     when: always
+#     expire_in: 1 week
+#     paths:
+#       - pa11y-report
+#   only:
+#     - master
+    

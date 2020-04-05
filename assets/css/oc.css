@@ -1,0 +1,128 @@
+/* Obastacle Course Base Style */
+
+body {
+	font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, sans-serif;
+	background-color:#fff;
+	color:#333333;
+	font-size:1rem;
+	font-family:Arial, Helvetica, sans-serif, "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:1.2;	
+	margin-left:25px;
+	margin-top:25px;
+}
+
+div.menu {
+  text-align: center;
+}
+
+
+hr {
+	border-top: 1px solid #8c8b8b;
+	border:1px solid #8c8b8b;
+	margin-left:0;
+	margin-right:25px;
+}
+
+h1,h2,h3,h4,h5,ul,ol,dl,p,pre,blockquote {
+	padding:1px;
+}
+
+
+ul,ol,li{	
+	margin-left:20px;
+}
+
+
+h1,.h1{
+	font-size:131%;
+	font-weight:bold;
+	font-style:normal;
+	color:#025a9a;
+	padding-bottom:0;
+	line-height:.5;
+}
+h2, .h2{
+	font-size:125%;
+	color:#036;
+	padding-bottom:0;
+	line-height:.5;
+	}
+h3,.h3{
+	font-size:113%;
+	color:#025a9a;
+	padding-bottom:0;
+	line-height:.5;	
+}
+
+h4, .h4 {
+	font-size:110%;
+	color:#036;
+	padding-bottom:0;
+	line-height:.5;
+	}
+	
+h5, .h5{
+	font-size:110%;
+	color:#025a9a;
+	padding-bottom:0;
+	line-height:.5;
+}
+
+h6, .h6 {
+	font-size:100%;
+	color:#036;
+	padding-bottom:0;
+	line-height:.5;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+table th, table td {
+	border:1px solid #999;
+	
+}
+
+table th{
+	text-align:left;
+	background-color:#ccc;
+	border-collapse:collapse;
+	border-spacing:0;
+	color:#333;
+	line-height:1.5;
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif, "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+table caption{
+	text-align:left;
+}
+
+.Disabled {
+	color: #C0C0C0;
+}
+.accessibilityCategory {
+	color: #0033CC;
+	font-weight:bold;
+	font-style:italic;
+}
+.TestStep {
+	color: #0066FF;
+	font-weight:bold;
+	font-style:italic;
+}
+.Ruleset {
+	color: #800040;
+	font-style:italic;
+}
+
+.Pass {
+	color: #008000;
+	font-weight:bold;
+}
+
+.Fail {
+	color: #800000;
+	font-weight:bold;
+}

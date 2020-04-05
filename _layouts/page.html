@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>{{ page.title }}</title>
+
+    {% if page.description %}
+      <meta name="Description" content="{{ page.description }}">
+    {% endif %}
+
+  <link rel="shortcut icon" href="{{ 'favicon.ico' | absolute_url }}" type="image/x-icon">
+
+  <link rel="stylesheet" href="{{ '/assets/css/oc.css' | absolute_url }}">
+  {% if page.extra_css %}
+    <link rel="stylesheet" href="{{ 'assets/css/' | append: page.extra_css | absolute_url }}">
+  {% endif %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <div class="menu">
+    <p>| <a target="_top" href="{{ '/' | absolute_url }}">Home</a> | </p>
+  </div>
+  
+    {{ content }}
+</body>
+</html>

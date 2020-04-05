@@ -1,0 +1,410 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ 
+ * ======================================================================
+        ALAN KINGS HAS MADE SEVERAL CHANGES STARTING 07/09/2016 
+   ======================================================================
+   
+   [1] - 07/09/2016: Paragraph element font size changed (15px)
+   [2] - 07/09/2016: Added KCI-Caption CSS class (.75em)
+*/
+
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+   
+body {
+	margin-top:25px;
+	margin-right:20px;
+	margin-bottom:10px;
+	margin-left:20px;
+}
+
+   
+p {
+	font-size: 1em;
+}
+
+.KCI-Caption {
+	font-size:.75em !important;
+}
+.KCI-Textbox {
+	font-size:.5em !important;
+}
+
+.CenterText {
+	text-align:center; 
+	}
+	
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 	
+	
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+.outer, .inner {
+    display: block;
+}
+
+.outer {
+    /* specify fixed width */
+    width: 300px;
+    padding: 0;
+}
+
+.inner {
+    /* specify padding, can be changed while remaining fixed width of .outer */
+    padding: 20px;
+}
+
+.outer .inner form p strong {
+	color: #4040FF;
+}
+
+.hrSmall {
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid outset;
+	}
+
+.kciDIV {
+	background:#FFC;
+	display:block;
+	margin-left:auto; 
+	margin-right:auto; 
+	border:double;
+    width: 300px;
+    padding: 0;
+	display:block;
+	}
+.width650px {
+	width:650px; 
+	}
+	
+.fsStyle {
+	border:1px solid blue;
+	padding: 1em;
+	}
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid blue;
+  color:blue;
+  font-weight:bold;
+  font-size:15px;
+  text-align:right;
+  }
+  
+  
+  /*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+ */
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.fully-compliant {
+	color: #008000;
+}
+.failure {
+	color: #800000;
+}
+.errorMsg {
+	color:rgb(170,0,0);
+	font-weight:bold;
+}
+
+.textBoxFont {
+	font-size:15px;
+	font-family:"Arial", Gadget, sans-serif;
+	}
+
+
+
+/*buttons*/
+.push_button{
+	position:relative;
+	width:200px;
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:5px;
+	border:solid 1px #008080;
+	background:#00C0C0;
+	text-align:center;
+	padding:20px 30px;
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px #008080;
+        -moz-box-shadow: 0px 9px 0px #008080;
+        box-shadow: 0px 9px 0px #008080;
+}
+.push_button:active{
+    -webkit-box-shadow: 0px 2px 0px #008080;
+    -moz-box-shadow: 0px 2px 0px #008080;
+    box-shadow: 0px 2px 0px #008080;
+    position:relative;
+    top:7px;
+}
+
+
+.BtnImg {
+	background-image:url(../img/submit.png);
+	background-repeat:no-repeat;
+    background-size: cover!important; 
+    -webkit-background-size: cover!important; 
+    background-repeat: no-repeat; 
+    background-position: bottom;
+	
+	}
+	
+.skipNav:focus {
+	display:block;
+	font-size:.8em;
+	width:100%;
+	padding:2px 0 3px 0;
+	text-align:center;
+	background-color:rgb(127,0,85);
+	color:rgb(255,251,240);
+	position:static;
+	clip:auto;
+	overflow:visible;
+	height:auto;
+}
+
+.skipNav {
+	position: absolute;
+	overflow: hidden;
+	height: 1px;
+	left: 103px;
+	top: 52px;
+}
+
+.hiddenSimple {
+	visibility:hidden;
+	}
+.redColor {
+	color: #A00;
+}
+.greenCompliant {
+	color: #008000;
+}
+.greenNonCompliant {
+	color: #80FF00;
+}
+
+/*** Fake Heading Tags ***/
+
+.fakeH1 {
+	font-family:sans-serif;
+	color:#222;
+	line-height:1;
+	font-size:2em;
+	text-align:center;
+	font-weight:bold;	
+}
+.fakeH2 {
+	font-family:sans-serif;
+	color:#222;
+	line-height:1.4;
+	font-size:1.4em;
+	text-align:left;
+	font-weight:bold;
+}
+.fakeH3 {
+	font-family:sans-serif;
+	color:#222;
+	line-height:1.4;
+	font-size:1.2em;
+	text-align:left;
+	font-weight:bold;
+}
+
+.aichWon {
+	font-family:sans-serif;
+	color:#222;
+	line-height:1;
+	font-size:2em;
+	text-align:center;
+	font-weight:bold;	
+}
+.aichTw {
+	font-family:sans-serif;
+	color:#222;
+	line-height:1.4;
+	font-size:1.4em;
+	text-align:left;
+	font-weight:bold;
+}
+
+.aichTh {
+	font-family:sans-serif;
+	color:#222;
+	line-height:1.4;
+	font-size:1.2em;
+	text-align:left;
+	font-weight:bold;
+}
+/* ****************************************************************/
+/* ****************************************************************/
+/*                        Custom Positioning                      */
+/* ****************************************************************/
+/* ****************************************************************/
+
+
+/* 11-A Failure Condition */
+
+div.relativeCSS {
+	position:relative;
+	border:none;
+}
+
+div.absoluteLine1 {
+	position:absolute;
+	top:0px;
+	text-indent:20px;
+	/*z-index:1;
+	visibility:visible;
+	*/
+}
+div.absoluteLine2 {
+	position:absolute;
+	top:25px;
+	text-indent:20px;
+	/*z-index:1;
+	visibility:visible;
+	*/
+}

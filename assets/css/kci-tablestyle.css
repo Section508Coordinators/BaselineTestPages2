@@ -1,0 +1,354 @@
+/* This KCI style sheet implements formatted tables on Desktop/Laptops: 
+
+@media only screen and (max-width: 1680px) and (min-width: 769px) {
+
+*/
+
+
+div.table-title {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-width80 {
+	width:80%; 
+	}
+.table-width90 {
+	width:90%; 
+	}
+.table-width100 {
+	width:100%; 
+	}
+		
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family:Verdana, Geneva, helvetica,arial,sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:18px;
+  font-weight: 100;
+  padding:10px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color:#3C3C3C;
+  font-size:16px;
+  font-weight:normal;
+/*  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);*/
+}
+ 
+ /*
+tr:hover td {
+  background:#D0D0D0;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+
+*/
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+ /*
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+*/
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:16px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+/* ****************************************************************/
+/* ****************************************************************/
+/* Custom CSS Formatting for table type 1: 4 column display table */
+/* ****************************************************************/
+/* ****************************************************************/
+.tblType1C4 {
+	table-layout: fixed;
+	border-collapse:collapse;
+	border:1px solid black;
+	border-spacing:15px;
+	width: 90%; 
+	/*white-space: nowrap;*/
+	}
+.tblType1C4 td {
+	/*white-space: nowrap;*/
+	overflow: visible;
+	text-overflow: ellipsis;
+}
+/* Custom Caption for Type1 table columns*/
+.tblType1C4 caption {
+	font-size:1.4em;
+	font-family:Verdana, Geneva, san-serif;
+	font-weight:bold;
+}
+/************************************************/
+/* Custom column widths for Type1 table columns */
+/************************************************/
+.row-Type1C1 {
+  width: 10%;
+}
+.row-Type1C2 {
+  width: 60%;
+}
+.row-Type1C3 {
+  width: 20%;
+}
+.row-Type1C4 {
+  width: 10%; 
+  }
+/* *******************************************************************/
+/* *******************************************************************/
+/* Custom CSS Formatting for Table Type: Active Test Cases 5 Columns */
+/* *******************************************************************/
+/* *******************************************************************/
+.tblActiveTestCases {
+	table-layout: fixed;
+	border-collapse:collapse;
+	border:1px solid black;
+	border-spacing:15px;
+	width: 95%; 
+	/*white-space: nowrap;*/
+	}
+.tblActiveTestCases td {
+	/*white-space: nowrap;*/
+	text-wrap:normal;
+	overflow:visible;
+	/*text-overflow: ellipsis;*/
+}
+.tblActiveTestCases caption {
+	font-size:1.4em;
+	font-family:Verdana, Geneva, san-serif;
+	font-weight:bold;
+}
+/******************************************************/
+/* Custom column widths for Active Test Cases columns */
+/******************************************************/
+.rowActiveTestCasesC1 {
+	/* # */
+  width: 5%;
+  text-align:center;
+}
+.rowActiveTestCasesC2 {
+	/* ID */	
+  width: 10%;
+  text-align:left;
+}
+.rowActiveTestCasesC3 {
+	/* Description of Failure Condition */	
+  width: 73%;
+  text-align:left;
+}
+.rowActiveTestCasesC4 {
+	/* Pass */	
+  width: 8%;
+  text-align:center;
+}
+.rowActiveTestCasesC5 {
+	/* Fail */	
+  width: 8%;
+  text-align:center;
+}
+
+
+
+.row-Type1C2 {
+  width: 60%;
+}
+.row-Type1C3 {
+  width: 20%;
+}
+.row-Type1C4 {
+  width: 10%; 
+  }
+
+.row-Type1C2-atc {
+  width: 70%;
+}
+.row-Type1C3-atc {
+  width: 10%; 
+  }
+  
+
+
+/******** TYPE 2 TABLE **********/
+.tblType2 {
+/*	table-layout: fixed;*/
+	border-collapse:collapse;
+	border:1px solid black;
+	border-spacing:15px;
+	width: 90%; 
+	/*white-space: nowrap;*/
+	}
+	
+.tblType2 caption {
+	font-size:1.4em;
+	font-family:Verdana, Geneva, san-serif;
+	font-weight:bold;
+}
+
+
+.divCaption {
+	/* Caption-like text styling for DIV elements*/
+	font-size:.85em;
+	font-family:Verdana, Geneva, san-serif;
+	font-weight:bold;
+	text-align:center;
+	}
+
+/* *******************************************************************/
+/* *******************************************************************/
+/* Custom CSS Formatting for Table Type: Change Log 4 Columns */
+/* *******************************************************************/
+/* *******************************************************************/
+.tblChangeLog {
+	table-layout: fixed;
+	border-collapse:collapse;
+	border:1px solid black;
+	border-spacing:15px;
+	width: 95%; 
+	/*white-space: nowrap;*/
+	}
+.tblChangeLog td {
+	/*white-space: nowrap;*/
+	/*overflow: visible;*/
+	/*text-overflow: ellipsis;*/
+	text-wrap:normal;
+	overflow:visible;	
+}
+/* Custom column widths for Type1 table columns*/
+.tblChangeLog caption {
+	font-size:1.4em;
+	font-family:Verdana, Geneva, san-serif;
+	font-weight:bold;
+}
+
+/* Custom column widths for Type3 table columns*/
+.row-ChangeLog-C1 {
+  width: 4%;
+}
+.row-ChangeLog-C2 {
+  width: 08%;
+}
+.row-ChangeLog-C3 {
+  width: 08%;
+  }
+.row-ChangeLog-C4 {
+  width: 80%;
+  }
+
+
+
+
+
+
+
+
+
+
+/*
+Alan's Code
+table a:link { color: #BF6030; } 
+table a:visited { color: #BF6030; } 
+table a:hover { color: white; } 
+*/
+
+
