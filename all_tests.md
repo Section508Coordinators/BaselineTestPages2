@@ -4,6 +4,7 @@ title: Index of Test Cases
 permalink: /all-tests/
 ---
 
+# Index of all test cases
 
 <ul>
 {% for page in site.pages %}
