@@ -8,9 +8,9 @@ permalink: /
 
 -----
 
-This repository houses test cases that serve as a central test case repository for testing accessibility test methodologies, both manual and automated, specifically against the Harmonized Process for Revised Section 508: Baseline Tests for Web Accessibility/TTv5.
+This repository houses test cases that serve as a central test case repository for testing accessibility test methodologies, both manual and automated, specifically against the Harmonized Process for Revised Section 508: Baseline Tests for Web Accessibility and the Trusted Tester: Section 508 Conformance Test Process For Web, version 5 (TTv5).  
 
-The test cases below are available for testing scenarios related to accessibility and the ICT Baseline.  
+The test cases below are available for testing scenarios related to the ICT Baseline and TTv5.  
   
 Updated: Sunday 03/08/2020 7:08 PM.
 
