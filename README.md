@@ -12,7 +12,7 @@ This repository houses test cases that serve as a central test case location for
 
 The hierarchical outline presented below consists of all baseline tests within the ICT Baseline.  Hyperlinked test case names (beginning with "TC") appearing within the layout below indicate test cases that are currently available to present test case scenarios related to the ICT Baseline and TTv5.  
 
-Published page: https://section508coordinators.github.io/BaselineTestPages2/  
+View the published page at: https://section508coordinators.github.io/BaselineTestPages2/  
   
 Updated: Sunday 03/08/2020 7:08 PM.
 
