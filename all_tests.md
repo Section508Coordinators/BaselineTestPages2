@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index of Test Cases..
+title: Index of Test Cases.
 permalink: /all-tests/
 ---
 
